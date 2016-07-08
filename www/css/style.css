@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+/*.scroll-bar-indicator {
+  display: none;
+}*/
+
+.col {
+  border: solid 1px #666;
+  background: #f6f6f6;
+}
+.tab-item-active {
+  color: #FD49AB;
+}
+.tab-item .icon{
+  margin: 2px auto;
+  height: 26px;
+  font-size: 26px;
+}

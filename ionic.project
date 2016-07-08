@@ -1,0 +1,5 @@
+{
+  "name": "memebox",
+  "app_id": "",
+  "gulpStartupTasks": ["sass", "watch"]
+}
