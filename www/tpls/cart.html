@@ -1,1 +1,71 @@
-<div class="cart">cart...</div>
+<ion-pane class="cart-content" ng-app="cart.controller">
+<!--header-->
+	<ion-header-bar class="bar-stable cart-header">
+		<h1 class="title">购物车</h1>
+  </ion-header-bar>
+<!--content-->
+	<ion-content scrollbar-y="false" class="padding-top cart-nav"  ng-controller="cartController">
+	<!--content-header-->
+  		<div class="bar bar-header car-list-line">
+  			<div class="buttons">
+    			<button class="button button-royal button-clear">中国仓/韩国仓</button>
+ 			 </div>
+ 			 <h2 class="title"></h2>
+			 <div class="buttons">
+    			<button class="button button-dark button-clear">
+    				<i class="ion ion-ios-arrow-up"></i>
+    			</button>
+ 			 </div>
+		</div>
+	<!--content-list-->
+	  <ion-list>
+			<ion-item ng-repeat="item in items" class="item-thumbnail-left has-header">
+				<img src="../img/cart-img2.gif"/>
+				<div class="delete">
+					<h2>{{item.title}}</h2>
+					<div class="ion-ios-close-empty cart-delete" style="font-size:30px;float:right;" ng-click="showConfirm()"></div>
+				</div>
+				<div class="cart-number">
+					{{item.price}}
+					<span class="cart-add">
+						<a href="javascript:;" class="dark icon ion-ios-minus-empty ng-click="cut()"></a>
+						<i class="dark">1</i>
+						<a href="javascript:;" class="dark icon ion-ios-plus-empty" ng-click="add()"></a>
+					</span>
+				</div>
+			</ion-item>
+    	<!--赠品-->
+			<ion-item ng-repeat="item in item1" class="item-thumbnail-left has-header">
+				<img src="../img/cart-img3.gif"/>
+				<div class="delete">
+					<h2>{{item.title}}</h2>
+				</div>
+				<div class="cart-number">
+					{{item.price}}
+      	</div>
+			</ion-item>
+			<!--确认订单-->
+			<ion-item>
+				<ion-list>
+					<span class="cart-total">
+						总价格:<i>￥376.00</i><br/>
+					  共2件
+					</span>
+					<button class="button button-royal cart-button">确认订单</button>
+				</ion-list>
+			</ion-item>
+	  </ion-list>
+		<!-- <div class="cart-hot">热门产品</div> -->
+		<!-- <button class="button button-stable button-full">热门产品</button> -->
+		<h5 class="tittle align-title">热门产品</h5>
+		<ion-item>
+			<img src="http://placehold.it/170X150"/>
+			<img src="http://placehold.it/170X150"/>
+		</ion-item>
+
+
+	</ion-content>
+  <!--热门产品-->
+
+
+</ion-pane>

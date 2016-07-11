@@ -66,5 +66,5 @@ angular.module('starter', ['ionic', 'home.controller', 'memebox.controller', 'ki
       }
     });
 
-  $urlRouterProvider.otherwise('/tab');
+  $urlRouterProvider.otherwise('/tab/home/shome');
 })
