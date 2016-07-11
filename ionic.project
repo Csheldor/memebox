@@ -1,5 +1,12 @@
 {
   "name": "memebox",
   "app_id": "",
-  "gulpStartupTasks": ["sass", "watch"]
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
