@@ -1,3 +1,79 @@
-.memebox{
-  background-color: teal;
+.memebox-container{
+  .bar{
+    line-height:.44rem;
+    img{
+      width:.72rem;
+      height:.2rem;
+    }
+  }
+
+  .memebox-nav{
+    width:20rem;
+    height:.44rem;
+    ul{
+      li{
+        height:.44rem;
+        line-height:.44rem;
+        float:left;
+        margin-right:.1rem;
+        color:#666;
+        font-size:.12rem;
+        &.active{
+          color:#f66;
+        }
+      }
+    }
+
+  }
+  ion-scroll{
+    .memebox-banner{
+        width:100%;
+        height:1.47rem;
+        img{
+          width:100%;
+          height:100%;
+        }
+    }
+  .memebox-list{
+    height:1.25rem;
+    padding-left:.1rem;
+
+    ul{
+      height:1.25rem;
+
+
+      li{
+        width:.74rem;
+        height:1.25rem;
+        margin-right:.1rem;
+        float:left;
+        img{
+          width:.68rem;
+          height:.68rem;
+        }
+        i{
+          line-height:.14rem;
+          font-size:.12rem;
+          color:#999;
+        }
+        p{
+          width:.68rem;
+          height:.14rem;
+          line-height: .14rem;
+          overflow:hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color:#999;
+          font-size:.12rem;
+        }
+        span{
+          height:.12rem;
+          font-size:.12rem;
+          color:#666;
+
+        }
+      }
+    }
+  }
+  }
 }
