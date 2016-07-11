@@ -9824,8 +9824,46 @@ a.button {
 .kinds {
   background-color: yellow; }
 
-.cart {
-  background-color: red; }
+.cart-content {
+  background: #eee; }
+  .cart-content .cart-header {
+    border-bottom: 1px solid #d2d2d2; }
+    .cart-content .cart-header .title {
+      color: #fa4eaa;
+      font-weight: 600; }
+  .cart-content .cart-nav .car-list-line {
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2; }
+  .cart-content ion-list ion-item .delete {
+    width: 100%;
+    height: 60px; }
+  .cart-content ion-list ion-item .item-right-edit.visible.active {
+    height: 30%; }
+  .cart-content ion-list ion-item h2 {
+    float: left;
+    width: 70%;
+    white-space: normal;
+    font-size: 12px; }
+  .cart-content ion-list ion-item .cart-number {
+    height: 60px;
+    color: red; }
+    .cart-content ion-list ion-item .cart-number .cart-add {
+      float: right;
+      display: inline-block;
+      border: 1px solid #ccc;
+      width: 60px;
+      height: 24px; }
+      .cart-content ion-list ion-item .cart-number .cart-add a {
+        padding: 0 5px; }
+        .cart-content ion-list ion-item .cart-number .cart-add a:last-child {
+          float: right;
+          border-left: 1px solid #ccc; }
+        .cart-content ion-list ion-item .cart-number .cart-add a:first-child {
+          border-right: 1px solid #ccc; }
+  .cart-content ion-list ion-item .cart-button {
+    float: right; }
+  .cart-content ion-list ion-item .cart-total i {
+    color: red; }
 
 .my {
   background-color: purple; }
