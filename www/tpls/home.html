@@ -1,14 +1,37 @@
 <div id="home-container">
-  <div class="home-header">header</div>
-  <div class="home-nav">nav</div>
-  <ion-scroll class="home-content">
-    <div class="home-banner">
-      <img src="http://placehold.it/320x105" alt="">
+
+  <!-- 首页头部header -->
+  <div class="home-header">
+    <div class="home-logo">
+      <img src="img/home/memebox.png" alt="">
     </div>
-    <div class="home-second-nav">home-secon-nav</div>
-    <section class="home-c-theme">
-      fddsf
-    </section>
-  </ion-scroll>
+    <div class="home-search">
+        <label class="item item-input home-s-i">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="text" placeholder="搜索">
+        </label>
+    </div>
+    <div class="home-chat">
+        <i class="icon ion-ios-chatbubble-outline"></i>
+    </div>
+  </div>
+
+  <!-- 首页导航 -->
+  <div class="home-nav">
+    <ion-scroll zooming="true" direction="x" scrollbar-x="false" has-bouncing="false">
+      <ul class="list">
+        <li class="item active" ui-sref=".shome">首页</li>
+        <li class="item" ui-sref=".china">中国仓</li>
+        <li class="item" ui-sref=".week">本周推荐</li>
+        <li class="item" ui-sref=".mask">面膜专区</li>
+        <li class="item" ui-sref=".korea">韩国直邮</li>
+        <li class="item" ui-sref=".makeup">美美妆</li>
+        <li class="item" ui-sref=".beamakeup">PONY美妆</li>
+      </ul>
+    </ion-scroll>
+  </div>
+
+    <ui-view  class="home-content"></ui-view>
+
 
 </div>
