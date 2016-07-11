@@ -28,7 +28,7 @@ angular.module('cart.controller',[])
       });
     confirmPopup.then(function(obj,res) {
       if(res) {
-          console.log(obj);
+
       } else {
         console.log(res);
       }
