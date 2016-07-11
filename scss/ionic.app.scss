@@ -20,12 +20,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "./classes.scss";
+@import "./variables.scss";
 @import "./home.scss";
 @import "./memebox.scss";
 @import "./kinds.scss";
 @import "./cart.scss";
 @import "./my.scss";
 
+html{
+    font-size: 100px;
+}
 .tab-item-active {
   color: #FD49AB;
 }
