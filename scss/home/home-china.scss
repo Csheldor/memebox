@@ -1,0 +1,76 @@
+.home-china{
+  width:100%;
+  height:100%;
+  .china-top-pro{
+    width:100%;
+    height:105px;
+    img{
+      display: block;
+    }
+  }
+  .china-content{
+    width:100%;
+    margin-top: 10px;
+    .china-con-pro{
+      width:100%;
+      height:150px;
+      img{
+        display: block;
+      }
+    }
+    .china-con-proshow{
+      .t-rush-pro{
+        padding:6px 0 0 6px;
+        width:960px;
+        .pro-buy{
+          width:96px;
+          font-size: 10px;
+          float: left;
+          margin-right: 6px;
+          dl dt{
+            width:96px;
+            height:96px;
+          }
+          dl dd{
+            position: relative;
+            p{
+              margin-bottom: 0;
+              &:nth-child(1){
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                background:url(/img/home/line-bg.png) no-repeat left 2px;
+                background-size:3px 10px;
+                text-indent: 1em;
+              }
+              &:nth-child(2){
+                text-decoration: line-through;
+                color:#ccc;
+              }
+              &:nth-child(3){
+                text-decoration: line-through;
+                color:#fb7070;
+              }
+            }
+            .b-buynow{
+              position:absolute;
+              bottom:0;
+              right:0;
+              background:#ff5fb3;
+              width:34px;
+              min-height: 22px;
+              height:22px!important;
+              line-height: 22px;
+              color: #fff;
+              font-size:10px;
+              padding:0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
