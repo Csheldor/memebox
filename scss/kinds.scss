@@ -29,7 +29,9 @@
             -webkit-box-sizing: border-box;
             background: #eeeeee;
             margin: 0 auto;
-            line-height: 30px;
+            img{
+              margin: 8px auto;
+            }
           }
           &:nth-child(2){
             font-size: 12px;

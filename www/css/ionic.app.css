@@ -10126,8 +10126,9 @@ img {
           border-radius: 15px;
           -webkit-box-sizing: border-box;
           background: #eeeeee;
-          margin: 0 auto;
-          line-height: 30px; }
+          margin: 0 auto; }
+          .kinds ion-content .top-div ul li:nth-child(1) img {
+            margin: 8px auto; }
         .kinds ion-content .top-div ul li:nth-child(2) {
           font-size: 12px;
           color: #a1a1a1; }
