@@ -1,10 +1,10 @@
-<ion-pane class='my-pane'>
+<ion-pane class='my-pane' ng-app='my-register'>
     <ion-header-bar class="header">
       	<button class="button button-icon ion-ios-arrow-left icon-color"></button>
         <span class="title my-title">注册</span>
         <button class="button my-btn">我有邀请人</button>
     </ion-header-bar>
-    <ion-content scroll='false'>
+    <ion-content scroll='false' class="has-header">
     	<div class="list my-font">
     		<label class="item item-input">
     			手 &nbsp机 &nbsp号<input type="text" placeholder="请输入手机号码或邮箱">
@@ -21,10 +21,10 @@
     		</label>
 	    	<div class="pad">
 	    		<button class="button button-full btn-bc">注册</button>
-	    	</div>	
+	    	</div>
 	    	<div class="acc-login">
 	    		<span>已有账号？</span><a>请登录</a>
 	    	</div>
     	</div>
     </ion-content>
-</ion-pane>  
+</ion-pane>
