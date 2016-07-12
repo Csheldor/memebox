@@ -1,3 +1,50 @@
-.my{
-  background-color: purple;
+@import "./my-register.scss";
+@import "./my-unregistered.scss";
+@import "./my-set.scss";
+
+.my-header{
+  color: #fb46a6;
+  button{
+    color: #fb46a6;
+  }
+}
+.my-banner{
+    height: 1.42rem;
+    background: pink;
+}
+.list{
+  .item{
+    border-right: none;
+  }
+	.my-dfont{
+	   @include flexbox();
+		span{
+			font-size: .1rem;
+			color: #868686;
+      @include flex(15);
+		}
+		em{
+			color: #d8d8d8;
+      @include flex(1);
+		}
+	}
+}
+.my-box{
+  width: 100%;
+  ul{
+    width: 100%;
+    @include flexbox();
+    li{
+      @include flex(1);
+      width: 100%;
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+      font-size: .07rem;
+      img{
+        width: .4rem;
+        height: .4rem;
+      }
+    }
+  }
 }
