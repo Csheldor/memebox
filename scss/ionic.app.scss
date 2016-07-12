@@ -20,30 +20,22 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-<<<<<<< HEAD
 @import "./classes.scss";
 @import "./variables.scss";
-=======
 @import "./home/home-china.scss";
 @import "./home/home-shome.scss";
->>>>>>> 6589d55dbf2a36e749bbc886cdfd6b9ecc7d5323
 @import "./home.scss";
 @import "./memebox.scss";
 @import "./kinds.scss";
 @import "./cart.scss";
 @import "./my.scss";
 
-<<<<<<< HEAD
-html{
-    font-size: 100px;
-=======
 html,body{
   width: 100%;
   height:100%;
 }
 html{
   font-size: 100px;
->>>>>>> 6589d55dbf2a36e749bbc886cdfd6b9ecc7d5323
 }
 .tab-item-active {
   color: #FD49AB;
