@@ -10363,7 +10363,7 @@ img {
     .kinds ion-content .item {
       padding: 0;
       border-style: none; }
-    .kinds ion-content .ul-pinpai li {
+    .kinds ion-content .ul-brand li {
       display: inline-block;
       font-size: 8px;
       color: #afafaf;
@@ -10372,19 +10372,19 @@ img {
       width: 100%;
       height: 4px;
       background: #eee; }
-    .kinds ion-content .pinpai-bt {
+    .kinds ion-content .brand-bt {
       width: 94%;
       margin: 0 auto; }
-      .kinds ion-content .pinpai-bt ul {
+      .kinds ion-content .brand-bt ul {
         width: 100%;
         display: -webkit-box; }
-        .kinds ion-content .pinpai-bt ul:nth-child(1) {
+        .kinds ion-content .brand-bt ul:nth-child(1) {
           padding-top: 6px; }
-        .kinds ion-content .pinpai-bt ul li {
+        .kinds ion-content .brand-bt ul li {
           -webkit-box-flex: 1;
           -webkit-box-pack: center;
           text-align: center; }
-          .kinds ion-content .pinpai-bt ul li img {
+          .kinds ion-content .brand-bt ul li img {
             border: 1px solid #d5d5d5;
             -webkit-box-sizing: border-box; }
 
