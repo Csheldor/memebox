@@ -1,0 +1,61 @@
+.my-pane{
+	background-color: #EEE;
+}
+.my-pane .header{
+	background-color: #eee;
+	color: #fb46a6;
+	background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+}
+.my-pane .icon-color{
+	color: #fb46a6;
+}
+.my-pane .header .my-title{
+	color: #fb46a6;
+	font-size: .14rem;
+}
+.my-pane .my-btn{
+	border: 0;
+	background-color: #eee;
+	color: #fb46a6;
+	font-size: .1rem;
+}
+.my-pane .my-btn:hover{
+	background-color: #eee;
+	color: #fb46a6;
+}
+/*logo*/
+.my-logo{
+	width: 100%;
+	height: .67rem;
+	background-color: #eee;
+	position: relative;
+}
+.my-logo img{
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+/*form*/
+.my-font label{
+	font-size: .1rem;
+}
+.my-font label input{
+	padding-left: .33rem;
+}
+.pad{
+	padding: 0 .1rem;
+}
+.pad .btn-bc{
+	background-color: #fa4eaa;
+	color: #fff;
+	border: 0;
+}
+.pad span a{
+	font-size: .07rem; 
+	float: right;
+	color: #fa4eaa;
+}
