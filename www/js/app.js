@@ -1,5 +1,5 @@
 
-angular.module('starter', ['ionic', 'home.controller', 'memebox.controller', 'kinds.controller', 'cart.controller', 'my.controller',])
+angular.module('starter', ['ionic', 'home.controller', 'memebox.controller', 'kinds.controller', 'cart.controller', 'my.controller'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -25,7 +25,7 @@ angular.module('starter', ['ionic', 'home.controller', 'memebox.controller', 'ki
       views: {
         'home-tab': {
           templateUrl: './tpls/home.html',
-          controller: 'homeController'
+          controller: 'home.controller'
         }
       }
     })
@@ -67,4 +67,4 @@ angular.module('starter', ['ionic', 'home.controller', 'memebox.controller', 'ki
     });
 
   $urlRouterProvider.otherwise('/tab/home/shome');
-})
+});

@@ -1,4 +1,4 @@
-angular.module('home.controller', ['ui.router'])
+angular.module('home.controller', [])
 
 .config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider
@@ -7,6 +7,10 @@ angular.module('home.controller', ['ui.router'])
       .state('tabs.home.shome',{
         url: '/shome',
         templateUrl: './tpls/home/home-shome.html'
+        // onEnter:function () {
+        //   getTotleWidth($(".home-nav .list .item"));
+        //   setWidth($(".t-rush-pro"),getTotleWidth($(".t-rush-pro .pro-buy")));
+        // }
       })
       .state('tabs.home.china',{
         url: '/china',
@@ -34,6 +38,18 @@ angular.module('home.controller', ['ui.router'])
       });
 })
 
-.controller('homeController', ['$scope', function ($scope) {
-
-}])
+.controller('home.controller', ['$scope', '$rootScope', function ($scope, $rootScope) {
+  // $scope.$on('$viewContentLoaded',function () {
+  //   setWidth($(".home-nav .list"),getTotleWidth($(".home-nav .list .item")));
+  //   setWidth($(".t-rush-pro"),getTotleWidth($(".t-rush-pro .pro-buy")));
+  // })
+  // $rootScope.$on('$stateChangeSuccess',function () {
+  //   setWidth($(".home-nav"),getTotleWidth($(".home-nav .list .item")));
+  //   setWidth($(".t-rush-pro"),getTotleWidth($(".t-rush-pro .pro-buy")));
+  // })
+  $(".home-nav .list .item").click(function(){
+    //console.log(this.index);
+    $(this).addClass("active")
+      .siblings().removeClass("active");
+  })
+}]);
